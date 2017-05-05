@@ -1,0 +1,11 @@
+name: a_combination_of_liquidation
+title: A combination of liquidation
+account: niuproject
+server: shinyapps.io
+appId: 143421
+bundleId: 645022
+url: https://niuproject.shinyapps.io/a_combination_of_liquidation/
+when: 1481538389.89265
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: server_back.R

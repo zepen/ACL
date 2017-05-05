@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nshinyUI(fluidPage(\n  tagList(\n    tags$head(\n      tags$title(\"Automated Clearing combination\")), \n      h2(\"Automated Clearing combination\", style = \"color:#99CCFF;font-family:'times'\")),\n  sidebarLayout(\n    sidebarPanel(\n      textInput(\"cash\", \"cash:\", \"1000000\"),\n      selectInput(\"comb\", \"comb:\",choices=c(\"1\",\"2\",\"3\",\"4\",\"5\")),\n      actionButton(\"Btn1\", \"Clear Data\", width = \"100%\"),\n      p(),\n      actionButton(\"Btn2\", \"Paint plot\", width = \"100%\")\n    ),\n    mainPanel(\n      tabsetPanel(\n        tabPanel(\"Table\", \n                 downloadButton('DD_QSR', 'Download Table'),\n                 DT::dataTableOutput('QSRtable')\n                 ),\n        tabPanel(\"Plot\",\n                 plotOutput('plot')\n                 )\n      )\n    )\n   )\n  )\n)\n\n",
+    "created" : 1478429598718.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1243830034",
+    "id" : "792B32A3",
+    "lastKnownWriteTime" : 1481527992,
+    "last_content_update" : 1481527992,
+    "path" : "D:/R.workplace/shinyapp/A combination of liquidation/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "source_window_id" : ""
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
